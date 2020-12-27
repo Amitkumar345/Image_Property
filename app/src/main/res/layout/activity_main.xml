@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="36sp"
+        android:layout_marginTop="90dp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/white"
+        android:background="@color/teal_200"
+        android:text="Enter the Image Link!"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/image_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:paddingHorizontal="10dp"
+        android:padding="5dp"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:hint="Image link"
+        android:inputType=""
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        android:layout_marginTop="85dp"
+        android:layout_marginHorizontal="24dp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btn_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="SHOW PROPERTIES"
+        android:textSize="24sp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="showDetails"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
