@@ -1,5 +1,6 @@
 # Image_Property
 ### Enter/Paste any image url and the app will show you a list of details in image
+#### Repository Link of used clarifai api: https://github.com/Clarifai/clarifai-java-grpc
 <div>
   <h4> Sample Image </h4>
 <img src="./app/src/main/res/drawable/farming[1].jpg" width="600px">
